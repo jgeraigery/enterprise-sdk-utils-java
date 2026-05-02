@@ -18,11 +18,11 @@ version '1.1.4-SNAPSHOT'
 
 dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.36'
-    implementation 'com.nimbusds:nimbus-jose-jwt:10.3'
+    implementation 'com.nimbusds:nimbus-jose-jwt:10.9'
     implementation 'org.json:json:20250107'
-    implementation 'com.nimbusds:oauth2-oidc-sdk:11.23'
+    implementation 'com.nimbusds:oauth2-oidc-sdk:11.37'
 
-    testImplementation 'org.mockito:mockito-core:4.9.0'
+    testImplementation 'org.mockito:mockito-core:4.11.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
     testImplementation 'ch.qos.logback:logback-classic:1.2.11'
     testImplementation "com.github.tomakehurst:wiremock-jre8-standalone:2.35.0"
@@ -31,10 +31,10 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
     testRuntimeOnly 'ch.qos.logback:logback-core:1.2.11'
 
-    compileOnly 'org.projectlombok:lombok:1.18.38'
-    annotationProcessor 'org.projectlombok:lombok:1.18.38'
-    testCompileOnly 'org.projectlombok:lombok:1.18.38'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.38'
+    compileOnly 'org.projectlombok:lombok:1.18.46'
+    annotationProcessor 'org.projectlombok:lombok:1.18.46'
+    testCompileOnly 'org.projectlombok:lombok:1.18.46'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.46'
 }
 
 tasks.register('sourcesJar', Jar) {
